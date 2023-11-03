@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "spectator",
+  "version": "${version}",
+  "name": "Spectator",
+  "description": "",
+  "authors": ["RTAkland"],
+  "contact": {
+    "repo": "https://github.com/RTAkland/Spectator"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/spectator/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      {
+        "adapter": "kotlin",
+        "value": "cn.rtast.spectator.Spectator"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
